@@ -1,13 +1,14 @@
 import React, { Component } from "react";
 
 class Quote extends Component {
+    state = { quote: 'Chuck Norris can walk on water.' }
     render() {
+        const { quote } = this.state;
         return (
-            <div>
-                <p>Chuck Says...</p>
-            </div>
+            <p>{quote}</p>
         );
-    }
-}
+    };
+
+};
 
 export default Quote;
